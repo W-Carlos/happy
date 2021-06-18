@@ -25,3 +25,11 @@ const icon = L.icon({
 L
 .marker([-27.2244003,-49.650684], { icon })
 .addTo(map)
+
+/* image gallery */
+function selectImage(event) {
+    const button = event.currentTarget
+
+    //remover todas as classe .active
+    
+}
