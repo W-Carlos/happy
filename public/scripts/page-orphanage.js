@@ -1,5 +1,13 @@
+const opitions = {
+    dragging: false,
+    touchZoom: false,
+    doubleClickZoom: false,
+    scrollWheelZzoom: false, 
+    zoomControl: false
+}
+
 //create map
-const map = L.map('mapid').setView([-27.2244003,-49.650684], 15)
+const map = L.map('mapid', opitions).setView([-27.2244003,-49.650684], 15)
 
 // create and add titleLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
