@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="public/CSS/main.css" />
     <link rel="stylesheet" href="public/CSS/animations.css">
+    <link rel="stylesheet" href="public/CSS/sidebar.css">
+    <link rel="stylesheet" href="public/CSS/map.css">
     <link rel="stylesheet" href="public/CSS/page-create-orphanage.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,7 +38,31 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-        
+        <form action="">
+          <fieldset>
+            <legend>Dados</legend>
+
+            <div class="map-container">
+              <div id="mapid"></div>
+
+              <footer>
+                <a href="#" id="select-point">
+                  Clique no mapa para aicionar a localização
+                </a>
+              </footer>
+            </div>
+
+            <div class="input-block">
+              <label for="name">Nome</label>
+              <input name="name" id="name">
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Visitação</legend>
+          </fieldset>
+        </form>
       </main>
     
     </div>
