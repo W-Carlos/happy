@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="public/CSS/map.css">
     <link rel="stylesheet" href="public/CSS/page-create-orphanage.css">
     <link rel="stylesheet" href="public/CSS/form.css">
+    <link rel="stylesheet" href="public/CSS/buttons.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -55,24 +56,31 @@
 
             <div class="input-block">
               <label for="name">Nome</label>
-              <input name="name" id="name">
+              <input name="name" id="name" required>
             </div>
 
             <div class="input-block">
               <label for="about">Sobre <span>Máximo de 300 caracteres</span></label>
-              <textarea name="about" id="about"></textarea>
+              <textarea name="about" id="about" required></textarea>
             </div>
 
             <div class="input-block">
               <label for="whatsapp">Número de whatsapp</label>
-              <input name="whatsapp" id="whatsapp">
+              <input name="whatsapp" id="whatsapp" required>
             </div>
 
             <div class="input-block images">
               <label for="images">Foto</label>
 
               <div class="images-upload" id="images">
-                <input type="images" placeholder="Cole o link da foto aqui">
+
+                <div class="new-upload">
+                  <input type="images" placeholder="Cole o link da foto aqui" required>
+                  <span>
+                    <img src="public/images/remove-file.svg" alt="Remover Foto">
+                  </span>
+                </div>
+
               </div>
               <button type="button">
                 <img src="public/images/add-file.svg" alt="Adicionar nova imagem">
@@ -86,24 +94,26 @@
 
             <div class="input-block">
               <label for="instructions">Instruções</label>
-              <textarea name="instructions" id="instructions"></textarea>
+              <textarea name="instructions" id="instructions" required></textarea>
             </div>
 
             <div class="input-block">
               <label for="opening_hours">Horários das visitas</label>
-              <input name="opening_hours" id="opening_hours">
+              <input name="opening_hours" id="opening_hours" required>
             </div>
 
             <div class="input-block">
               <label for="open_on_weekends">Atende fim de semana?</label>
-              <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1">
+              <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required>
 
               <div class="button-select">
                 <button type="button" class="active">Sim</button>
                 <button type="button">Não</button>
               </div>
 
-              <button type="submit"></button>
+              <button type="submit" class="primary-button">
+                Confirmar
+              </button>
             </div>
 
           </fieldset>
