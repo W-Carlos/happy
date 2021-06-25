@@ -12,8 +12,28 @@ const icon = L.icon({
     iconAnchor: [29, 68]
 })
 
+let marker
+
 // create and add marker
-L
+map.on('click', (event) => {
+    const lat = event.latlng.lat
+    const lng = event.latlng.lng
+
+    document.querySelector('[name=lat]').value = lat
+    document.querySelector('[name=lng]').value = lng
+
+
+    // remove icon
+    marker && map.removeLayer(marker)
+
+    // add icon layer
+    marker = L.marker([lat, lng], { icon })
+        .addTo(map)
+})
+
+
+
+/*L
 .marker([-27.2244003,-49.650684], { icon })
 .addTo(map)
-.bindPopup(popup)
+.bindPopup(popup)*/
