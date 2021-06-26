@@ -55,3 +55,20 @@ function addPhotoField() {
     //adicionar o clone ao container de #images
     container.appendChild(newFieldContainer)
 }
+
+/* Botão deletar imagem */
+function deleteField(event) {
+    const span = event.currentTarget
+
+    const fieldsContainer = document.querySelectorAll('.new-upload')
+
+    if(fieldsContainer.length <= 1) {
+        // limpar o valor do campo
+        span.parentNode.children[0].value = ""
+        return
+    }
+
+    // deletar o campo
+    span.parentNode.remove()
+
+}
