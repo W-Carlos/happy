@@ -37,10 +37,21 @@ function addPhotoField() {
     const container = document.querySelector('#images')
 
     //pegar o container para duplicar .new-image
-    const fieldsContainer = document.querySelectorAll('.new-image')
+    const fieldsContainer = document.querySelectorAll('.new-upload')
 
     //realizar o clone da útima imagem adicionada
-    const newFieldContainer = fieldsContainer[fieldsContainer.length]
+    const newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true)
+
+    // verificar se o campo está vazio. Se sim, não adicionar ao container de imagens
+    const input = newFieldContainer.children[0]
+
+    if(input.value == ""){
+        return
+    }
+
+    // limpar o campo antes e adicioar ao cotainer de imagem
+    newFieldContainer.children[0].value = ""
 
     //adicionar o clone ao container de #images
+    container.appendChild(newFieldContainer)
 }
