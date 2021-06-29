@@ -9,7 +9,7 @@ server
     .use(express.static('public'))
 
     // configurar template engine
-    .set('view', path.join(__dirname, "view"))
+    .set('views', path.join(__dirname, "views"))
     .set('view engine', 'hbs')
 
     // criar uma rota 
