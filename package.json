@@ -4,7 +4,7 @@
   "description": "Projeto NLW",
   "main": "index.js",
   "scripts": {
-    "start": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
