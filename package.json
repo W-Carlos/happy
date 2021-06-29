@@ -1,0 +1,23 @@
+{
+  "name": "happy",
+  "version": "1.0.0",
+  "description": "Projeto NLW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/W-Carlos/happy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/W-Carlos/happy/issues"
+  },
+  "homepage": "https://github.com/W-Carlos/happy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
