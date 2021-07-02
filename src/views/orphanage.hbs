@@ -81,16 +81,22 @@
               {{#if orphanage.open_on_weekends}}
                 <div class="open-on-weekends open">
                   <img src="/images/info.svg" alt="Informaçao">
-                  Atedemos fim de semana.
+                  Atendemos fim de semana.
+                </div>
+                {{else}}
+                <div class="open-on-weekends closed">
+                  <img src="/images/info-red.svg" alt="Informaçao">
+                  Não atendemos fim de semana.
                 </div>
               {{/if}}
 
             </div>
 
-            <button class="primary-button" type="button">
+            <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{orphanage.whatsapp}}"
+            target="_black" class="primary-button" type="button">
               <img src="/images/whatsapp.svg" alt="Chamar no whatsapp">
               Entrar em contato
-            </button>
+            </a>
           </div>
 
         </div>
