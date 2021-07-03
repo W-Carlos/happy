@@ -44,5 +44,14 @@ module.exports = {
 
     createOrphanage(req, res) {
         return res.render('create-orphanage')
+    },
+
+    saveOrphanage(req, res) {
+        const fields = req.body
+
+        // validar se todos os campos estão preenchidos
+        if(Object.values(fields).includes('')) {
+            return res.send('Todos os campos devem ser preenchidos!')
+        }
     }
 }
