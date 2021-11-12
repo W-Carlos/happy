@@ -2,16 +2,13 @@
     <img src="./public/images/logo.svg"> 
 </h1>
 
-
 > ## 💻 Sobre o Projeto
-<br>
 <p>O Happy é uma aplicação que foi feita para ajudar a conectar pessoas á casas de acolhimento para assim fazer o dia de muitas crianças mais feliz 👦👧</p>
 
 > ## 📸 Demonstração
 <img src="./public/images/happy.gif" alt="Demonstração" title="Demonstração">
 
 > ## 🚀 Tecnologias
-<br>
 <p>Este projeto foi feito com as seguintes ferramentas:</p>
 
 * [Node.js](https://nodejs.org/en/)
