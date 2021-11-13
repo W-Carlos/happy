@@ -39,7 +39,7 @@ $ npm start
 ```
 
 > ## 📄 Licença
-<p>Este projeto está sob a licença MIT. Veja o arquivo <a href="https://github.com/W-Carlos/happy/blob/main/LICENSE">LISENCE</a> para mais detalhes.</p>
+<p>Este projeto está sob a licença MIT. Veja o arquivo <a href="https://github.com/W-Carlos/happy/blob/main/LICENSE">LICENSE</a> para mais detalhes.</p>
 
 ---
 <p align="center"> Feito com ♥ by Wend Carlos 👋 </p>
